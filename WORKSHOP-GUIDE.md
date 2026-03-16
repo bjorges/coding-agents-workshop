@@ -1055,7 +1055,7 @@ Using our testing patterns, generate tests for the checkout flow
 - **Features**: Git-aware pair programming in the terminal; commits automatically
 - **Best for**: Developers who commit frequently; teams using version control
 - **Cost**: Free and open-source
-- **Install**: `pip install aider-chat`
+- **Install**: `pip install aider-chat` (or `uv pip install aider-chat`)
 - **Example**:
   ```bash
   aider                    # Start interactive session
@@ -1085,14 +1085,18 @@ Using our testing patterns, generate tests for the checkout flow
 
 ### Platform-Specific Considerations
 
+> **Note**: If `pip` is not available on your system (common on modern Macs), you can use [uv](https://docs.astral.sh/uv/) in place of `pip`. Simply replace `pip` with `uv pip` in any of the commands below.
+
 #### **macOS & Linux**
 
 Terminal agents work great natively. Just install Python and the tool:
 
 ```bash
 pip install aider-chat
+# Or with uv: uv pip install aider-chat
 # or
 git clone https://github.com/opencode/opencode && cd opencode && pip install -e .
+# Or with uv: git clone https://github.com/opencode/opencode && cd opencode && uv pip install -e .
 ```
 
 #### **Windows**
@@ -1110,8 +1114,10 @@ wsl --install
 
 # Then in WSL 2 terminal:
 pip install aider-chat
+# Or with uv: uv pip install aider-chat
 # or
 git clone https://github.com/opencode/opencode && cd opencode && pip install -e .
+# Or with uv: git clone https://github.com/opencode/opencode && cd opencode && uv pip install -e .
 ```
 
 ### When to Use Terminal vs. VS Code

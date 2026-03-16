@@ -23,6 +23,7 @@ A minimal REST API for managing tasks, built with Flask. Use this project to pra
 ```bash
 # Install dependencies
 pip install -r requirements.txt
+# Or with uv: uv pip install -r requirements.txt
 
 # Run the server
 python app.py

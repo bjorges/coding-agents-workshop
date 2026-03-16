@@ -19,21 +19,18 @@ CONFIGURATION:
 
 DOCUMENTATION:
   README.md              - Project overview and quick start
-  GIST-README.md         - Workshop guide and exercises
   AGENTS.md              - Empty placeholder (first exercise!)
   FILES-MANIFEST.txt     - This file
 
-TOTAL: 11 files, ~500 lines of code and docs
+TOTAL: 10 files, ~500 lines of code and docs
 
 GETTING STARTED:
-  1. Install dependencies: pip install -r requirements.txt
+  1. Install dependencies: pip install -r requirements.txt (or uv pip install -r requirements.txt)
   2. Run the server: python app.py
   3. Test it: curl http://localhost:5000/health
   4. Run tests: pytest tests_app.py -v
 
 WORKSHOP USE:
-  See GIST-README.md for detailed exercises and instructions.
-  
   Quick exercises:
     - Write AGENTS.md (Exercise 1)
     - Add input validation (Exercise 2)

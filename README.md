@@ -58,6 +58,16 @@ python sample-project/app.py
 curl http://localhost:5000/health
 ```
 
+> **💡 pip not found?** Many modern Macs don't ship with `pip`. You can use [uv](https://docs.astral.sh/uv/) instead — it's fast and easy to install:
+> ```bash
+> # Install uv (one-time)
+> curl -LsSf https://astral.sh/uv/install.sh | sh
+> # Or: brew install uv
+>
+> # Then use it in place of pip
+> uv pip install -r sample-project/requirements.txt
+> ```
+
 ### The Exercises
 The sample project contains 6 progressive exercises:
 
@@ -155,6 +165,7 @@ sample-project/
 ```bash
 cd sample-project
 pip install -r requirements.txt
+# Or with uv: uv pip install -r requirements.txt
 ```
 
 ### Start the API Server
