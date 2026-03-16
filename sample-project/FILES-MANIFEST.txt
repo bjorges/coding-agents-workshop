@@ -1,0 +1,55 @@
+TaskAPI Sample Project — File Manifest
+========================================
+
+This archive contains 11 files for the "AI Agents for Coding" workshop.
+
+CORE APPLICATION FILES:
+  app.py                 - Flask REST API application (79 lines)
+  models.py              - Task data model (39 lines)
+  database.py            - In-memory database (52 lines)
+  config.py              - Configuration (20 lines)
+
+TESTING & SETUP:
+  tests_app.py           - Pytest unit tests (61 lines, incomplete by design)
+  requirements.txt       - Python dependencies
+  Dockerfile             - Container definition
+
+CONFIGURATION:
+  .env.example           - Example environment variables
+
+DOCUMENTATION:
+  README.md              - Project overview and quick start
+  GIST-README.md         - Workshop guide and exercises
+  AGENTS.md              - Empty placeholder (first exercise!)
+  FILES-MANIFEST.txt     - This file
+
+TOTAL: 11 files, ~500 lines of code and docs
+
+GETTING STARTED:
+  1. Install dependencies: pip install -r requirements.txt
+  2. Run the server: python app.py
+  3. Test it: curl http://localhost:5000/health
+  4. Run tests: pytest tests_app.py -v
+
+WORKSHOP USE:
+  See GIST-README.md for detailed exercises and instructions.
+  
+  Quick exercises:
+    - Write AGENTS.md (Exercise 1)
+    - Add input validation (Exercise 2)
+    - Improve error handling (Exercise 3)
+    - Write more tests (Exercise 4)
+    - Use environment variables (Exercise 5)
+    - Add logging (Exercise 6)
+
+INTENTIONAL GAPS (For Practice):
+  - Missing input validation in POST endpoints
+  - Generic error responses
+  - Incomplete test coverage
+  - Hardcoded configuration values
+  - No logging
+  
+These are meant to be fixed using AI coding assistants!
+
+Created: March 2026
+License: MIT
